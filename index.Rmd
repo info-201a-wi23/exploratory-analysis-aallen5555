@@ -5,50 +5,75 @@ output: html_document
 
 ## Project title
 
-Give your project a concise, interesting title that summarizes the entirety of your project
+Race and Gender in NYC Business Certification
 
 ### Authors
 
-Names of your team members
+| Name              | Email   |
+|-------------------|-----------------|
+| Zach Gendreau     | zgen88@uw.edu   |
+| William Hardjanto | wh11@uw.edu     |
+| Audrey Allen      | aallen55@uw.edu |
+| Noor Kaur         | noorkaur@uw.edu |
+| Nini Tseng        | nini9157@uw.edu |
 
 ### Date
 
-Winter 2022
+Winter 2023
 
-### Abstract
+## Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+The project aims to analyze the demographic representation, geographic distribution, financial success, and growth trends of M/WBE, LBE, and EBE certified businesses in NYC's construction and construction-related industry. Our main question is: How does the demographic representation of M/WBE, LBE, and EBE certified businesses in New York City compare to the city's overall demographic? This question is important as it will highlight how well these certified minority- and women-owned businesses represent the diverse communities of the city, and accordingly we plan to analyze it in hope that it will provide valuable insights to inform policies promoting diversity and equality in the city's business community.
 
-### Keywords
+## Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+New York, Business, Licensing, Race, Gender
 
-### Introduction  
+## Proposal
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+1. Introduction  
 
-### Related Work  
+In this project, we are aiming to analyze the New York City Minority and Women-owned Business Enterprise (M/WBE), Emerging Business Enterprise (EBE), and Locally-based Business Enterprise (LBE) certified business that is related or in the construction business.
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+The growing emphasis in the business world on promoting diversity and equality has drawn attention to the need for opportunities for minority- and women-owned businesses. Nonetheless, disparities and inequalities in the distribution of business opportunities persist, despite efforts to promote diversity. The result of our analysis will be answered in a few research questions. We hope would be able to give user of data a deeper understanding of the diversity of minority- and women-owned businesses. These questions are:
 
-### The Dataset
+ - In terms of race, ethnicity, and gender, how does the demographic representation of M/WBE, LBE, and EBE certified businesses in New York City compare to the city's overall demographic? This question is significant because it can reveal how well these minority- and women-owned certified businesses represent the city's diverse communities.
+ - What is the city's geographic distribution of certified businesses? This question is important as it can reveal inequalities in the distribution of opportunities for minority- and women-owned businesses across the city.
+ - What's the connection between a company owner's ethnicity to its revenue(by using data of value of contract)? This question is important because we can determine whether ethnicity or race has an impact on a company's financial success.
+ - What has happened to the number of certified businesses over time? This is an important question because it can reveal trends and patterns in the growth and success of the city's minority and women-owned businesses, which can be used to help decide future policies regarding this certification program.
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+We hope to gain valuable insight into the diversity and distribution of certified minority- and women-owned businesses in New York City through this project. We hope that the findings of our analysis will be used to assist policymakers in promoting diversity and equality in the city's business community.
 
-### Implications
+2. Related Work  
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+The topic we are researching is the ownership of business in NYC by women and people of color. Historically, they have not received the same resources as majority-business owners, however, there are programs in place to support these minority-business owners. New York City's certification programs, including the Minority and Women-owned Business Enterprise (M/WBE) Program, the Emerging Business Enterprise (EBE) Program and the Locally-based Business Enterprise (LBE) Program certify, promote, and foster the growth of the City’s minority and women-owned businesses and eligible small construction and construction-related businesses. The program expands opportunities for minority and women entrepreneurs to access government contracts and grow their businesses. When eligible businesses are certified with the City they become more visible to prospective buyers, including City agencies and private contractors seeking to purchase goods and services. Earning this certification ultimately leads to more recognition by prospective buyers of contracts. Busineses would be placed on the certified MWBE directory where State agencies and vendors looking for subcontractors can reach out. There is also generlaly less competition between certified construction businesses and those that are non-certified. The database that is being researched is available to all general contractors within the state. Through this recognition, connections can be made that lead to more lucrative contracts in the future.
 
-### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+> MBE Certification - NY & NJ: Benefits of being MBE Certified. NYNJMSDC. (2022, August 10). Retrieved February 2, 2023, from https://nynjmsdc.org/mbe-certification/ Minority- and women-owned business enterprises (mwbes). Office of the New York State Comptroller. (n.d.). Retrieved February 2, 2023, from https://www.osc.state.ny.us/state-vendors/resources/minority-and-women-owned-business-enterprises-mwbes Small Business Services, Department of. (n.d.). NYC Department of Small Business Services (SBS). NYC Business. Retrieved February 2, 2023, from https://www.nyc.gov/nycbusiness/description/minority-and-womenowned-business-enterprise-certification-program-mwbe
+
+
+3. The Dataset
+
+We found the data on [Kaggle](https://www.kaggle.com/datasets/new-york-city/nyc-m-wbe,-lbe,-and-ebe-certified-business-list), but it was originally listed in the [New York City OpenData cite](https://data.cityofnewyork.us/Business/M-WBE-LBE-and-EBE-Certified-Business-List/ci93-uc8s), and was originally collected by the Department of Small Business Services (SBS). While not listed on the site, the data is assumedly collected from each businesses license certification information, and both collected and made public in accordance with the NY Open Data Law, a law passed in 2012 that requires all city agencies make their data public through the OpenData portal. The data has 46 features and 6645 observations.
+
+According to the NYC OpenData website, 
+
+> The City’s certification programs, including the Minority and Women-owned Business Enterprise (M/WBE) Program, the Emerging Business Enterprise (EBE) Program and the Locally-based Business Enterprise (LBE) Program certify, promote, and foster the growth of the City’s minority and women-owned businesses
+
+However, due to a variety of reasons, such as weath disparities and biases stemming from a history of racism and sexism in the US, it would be unwise to approach this data assuming that they are effectively fostering this growth. Therefore, we should ask a variety of ethical questions about this data, and questions about the limitations of this data, such as:
+
+- Who is left out of this data, and why? What issues could stem from that lack of representation?
+- What overlap is there between owners of these licenses? How often do women and minorities also receive EBE and LBE licenses?
+- This data provides no knowledge on how the city chooses who will receive licenses. In what ways could those systems cause inequity in who receives licenses? What issues come from making data public, but not the systems that created the data?
+- These are only four licenses, out of the thousands that New York offers. How do the data trends in this limited data set compare to trends concerning who receives all of the possible licenses?
+
+
+4. Implications
+
+Our project has the potential to bring in valuable insights about the ownership of businesses in NYC, especially for minority and women-owned businesses. It can help create a better understanding of the world around us by providing insights into the many factors that shape business ownership and success. By examining the dataset and analyzing important trends, we can gain a deeper understanding of the structural and systemic barriers that minority and women-owned businesses face, as well as the opportunities and resources that can help these businesses thrive. We can help shed light on the current state of business ownership in this city by highlighting existing racial and economic disparities. Our work can be used by a variety of stakeholders, including policymakers, technologists, designers, researchers, and advocacy groups. Information from our project can be used to improve decision-making processes and create more equitable policies and programs that are aimed at supporting such businesses. By providing a comprehensive and accurate understanding of the challenges faced by minority and women-owned businesses in NYC, our work can help to create a more level playing field for these businesses and contribute to greater economic equity in the city.
+
+5. Limitations & Challenges
+
+There are many significant challenges and limitations that come along with analyzing such a big dataset. Firstly, the accuracy of data can be a challenge as not all businesses may be represented in the database, or the data may not be updated frequently enough to represent all of such businesses. This process, known as selection bias, can lead to misrepresentation of minority and women-owned businesses in NYC as a whole. Additionally, there may be bias in the data itself – introduced through assumptions made while collecting data – which could impact the representation of minority and women-owned businesses. Another challenge might be the potential for data privacy issues, since some business owners might not want their information to be made public. All of these challenges lead to an inaccurate representation of the true ownership of minority and women-owned businesses in NYC. To overcome some of these challenges and limitations, we may need to supplement the dataset with additional sources or confirm how this data is collected, to ensure that the data we are using is ethically collected and is accurate and representative of the businesses in NYC.
 
 ### Summary Information
 
@@ -68,14 +93,14 @@ Describe why you chose this chart and what information it reveals
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, warning=FALSE, message=FALSE, code = readLines("chart1_example.R")}
 ```
 
 ### Chart 2
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals
+This chart is a visual of  the location of each business in the greater New York City area, sorted by certification type. With this we can visualize very clearly that MBE, WBE and the combo of MBE and WBE are the most common certification type in this dataset by far. We also see a  very dense area of businesses in general, but moreso MBE liscenses, at the center of New York City.
+```{r, echo = FALSE, warning=FALSE, message=FALSE, code = readLines("zipcode_map.R")}
+```
 
 ### Chart 3
 
