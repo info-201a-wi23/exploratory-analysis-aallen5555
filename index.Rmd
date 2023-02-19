@@ -85,16 +85,16 @@ Include a table of aggregate information
 
 Describe why you included the table and what information it reveals
 
-### Chart 1
+### Chart 1: Representation of Ethnicities Among NYC Businesses
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-```{r, echo = FALSE, warning=FALSE, message=FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, warning=FALSE, message=FALSE, code = readLines("ethnicities_chart.R")}
 ```
+
+This chart explores trends about the representation of vendors from specific ethnic backgrounds in NYC. I chose to represent this data in the form of a bar chart because it allows us to efficiently compare and contrast the number of vendors from each ethnic background. Each bar represents a different ethnicity, and the height of the bars represent the number of vendors from that group. This allows us to quickly analyze trends and make conclusions about which ethnicity is going especially unnoticed among the plethora of businesses in NYC.
+
+This chart reveals that within the very underrepresented group of minority and women-owned businesses, non-minority and Black vendors are represented at higher rates, with 2040 and 1959 vendors respectively, followed by 1464 Asian vendors and 1170 Hispanic vendors. 
+
+It is also important to note that although the categories are labeled as "ethnicities", they are, in fact, very broad and generalized terms. Categories such as "Black" or "Asian" are umbrella terms and can include vendors from very distinct backgrounds who don't share many similarities, and might be better represented as separate ethnic groups. Additionally, there are a small number of vendors with unspecified ethnicity, and this might also indicate the need for a better system of tracking and reporting demographic information.
 
 ### Chart 2
 

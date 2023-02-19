@@ -22,7 +22,7 @@ ggplot(data = ethnicities) +
       c("#bc6c25", "#606c38", "#dda15e", "#e76f51", "#283618")
   ) +
   labs(
-    title = "Representation of Ethnicities among NYC Businesses",
+    title = "Representation of Ethnicities Among NYC Businesses",
     x = "Ethnicity",
     y = "Number of Vendors"
   ) +
