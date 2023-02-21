@@ -2,13 +2,13 @@ library("dplyr")
 library("tidyverse")
 library("stringr")
 
-
+# read csv
 full_dataset <- read.csv("fulldataframe.csv")
 
-WBE_count <- nrow(full_dataset[full_dataset$certification == "WBE", ])
-
+# make the cities collumn
 Cities <- full_dataset %>% group_by(State) %>% summarise(Cities = paste(unique(na.omit(City)), collapse = ", "))
 
+# make the zipcodes collumn
 ZipCodes <- full_dataset %>% group_by(State) %>% summarise(ZipCodes = paste(unique(na.omit(ZIP)), collapse = ", "))
 
 # Group data by state and find most common zip code
@@ -17,41 +17,50 @@ most_common_zip <- full_dataset %>%
   summarize(most_common_zip = names(which.max(table(na.omit(ZIP))))) %>%
   ungroup()
 
+# find number of business
 NumberOfBusiness <- full_dataset %>% group_by(State) %>% summarise(NumberOfBusiness = n())
 
+# count the total minority
 MinorityCount <- full_dataset %>% group_by(State) %>%
   summarise(non_minority_count = sum(Ethnicity == "NON-MINORITY"), 
     total_count = n()) %>% 
   mutate(minority_count = (total_count - non_minority_count))
 
+# count the percentage minority
 PctMinority <- full_dataset %>% group_by(State) %>%
   summarise(non_minority_count = sum(Ethnicity == "NON-MINORITY"), 
     total_count = n()) %>% 
   mutate(minority_pct = ((total_count - non_minority_count) / total_count) * 100)
   PctMinority <- PctMinority[, c("State", "minority_pct")]
 
+# find out which ethnicity is the majority
 Majority <- full_dataset %>%
   group_by(State) %>%
   summarize(MajorityEthnicity = names(which.max(table(Ethnicity))))
 
+# find the number of WBE owner
 WBECount <- full_dataset %>% group_by(State) %>%  
   summarise(WBECount = sum(str_detect(certification, "WBE")))
 
+# find the number of WBE percentage
 WBEPercentage <- full_dataset %>% group_by(State) %>%
   summarise(WBECount = sum(str_detect(certification,"WBE")),
     total_count = n()) %>%
   mutate(WBE_pct = (WBECount / total_count) * 100)
   WBEPercentage <- WBEPercentage[, c("State", "WBE_pct")]
-                            
+                   
+# find the number of MBE owner
 MBECount <- full_dataset %>% group_by(State) %>%  
   summarise(MBECount = sum(str_detect(certification, "MBE")))
 
+# find the number of MBE percentage
 MBEPercentage <- full_dataset %>% group_by(State) %>%
   summarise(MBECount = sum(str_detect(certification, "MBE")),
     total_count = n()) %>%
   mutate(MBE_pct = (MBECount / total_count) * 100)
   MBEPercentage <- MBEPercentage[, c("State", "MBE_pct")]
 
+# add all to table
 Final <- left_join(Cities, ZipCodes, PctMinority, by = "State") %>%
   left_join(NumberOfBusiness, by = "State") %>% 
   left_join(most_common_zip, by = "State") %>% 
