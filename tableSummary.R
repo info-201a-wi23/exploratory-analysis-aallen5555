@@ -1,6 +1,8 @@
 library("dplyr")
 library("tidyverse")
 library("stringr")
+library("knitr")
+library("kableExtra")
 
 # read csv
 full_dataset <- read.csv("fulldataframe.csv")
@@ -71,4 +73,6 @@ Final <- left_join(Cities, ZipCodes, PctMinority, by = "State") %>%
   left_join(WBEPercentage, by = "State") %>%
   left_join(MBECount, by = "State") %>%
   left_join(MBEPercentage, by = "State")
+
+Final %>% kbl()
 
