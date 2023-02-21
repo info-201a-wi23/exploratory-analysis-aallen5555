@@ -84,7 +84,7 @@ The data we used contain information regarding certification program mainly for 
 ```{r, echo = FALSE, warning=FALSE, message=FALSE, code = readLines("tableSummary.R")}
 ```
 
-This table shows information regarding certification program mainly divided based on state. It is alphabetical order with information of all the cities and zipcodes. I choose to provide this information as I believe it is important since the same data will be used on a map for one of the chart. There is also information regarding the amount of business participating per state and information regarding the ethnic diversity per state such as the amount of minority owner, percentage, and major ethnic minority. I also included the amount and percentage of certification, though I only included WBE and MBE since they are the more important certification in the context that other certification has too low of participant number.
+This table shows information regarding certification program mainly divided based on state. It is alphabetical order with information of the most common cities and zipcodes and their numbers. I choose to provide this information as I believe it is important since the same data will be used on a map for one of the chart. There is also information regarding the amount of business participating per state and information regarding the ethnic diversity per state such as the amount of minority owner, percentage, and major ethnic minority. I also included the amount and percentage of certification, though I only included WBE and MBE since they are the more important certification in the context that other certification has too low of participant number.
 
 ### Chart 1: Representation of Ethnicities Among NYC Businesses
 

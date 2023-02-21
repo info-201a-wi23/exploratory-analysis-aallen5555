@@ -7,17 +7,13 @@ library("kableExtra")
 # read csv
 full_dataset <- read.csv("fulldataframe.csv")
 
-# make the cities collumn
-Cities <- full_dataset %>% group_by(State) %>% summarise(Cities = paste(unique(na.omit(City)), collapse = ", "))
+# make tcolumn for number of city per state and the most common city
+Cities <- full_dataset %>% group_by(State) %>%
+  summarize(CityCount = n(), MostCommonCity = names(which.max(table(City))))
 
-# make the zipcodes collumn
-ZipCodes <- full_dataset %>% group_by(State) %>% summarise(ZipCodes = paste(unique(na.omit(ZIP)), collapse = ", "))
-
-# Group data by state and find most common zip code
-most_common_zip <- full_dataset %>%
-  group_by(State) %>%
-  summarize(most_common_zip = names(which.max(table(na.omit(ZIP))))) %>%
-  ungroup()
+# make column for unique zip codes amount and the most common zip codes per city
+ZipCodes <- full_dataset %>% group_by(State) %>%
+  summarize(UniqueZipCount = n(), MostCommonZIP = names(which.max(table(ZIP))))
 
 # find number of business
 NumberOfBusiness <- full_dataset %>% group_by(State) %>% summarise(NumberOfBusiness = n())
@@ -65,7 +61,6 @@ MBEPercentage <- full_dataset %>% group_by(State) %>%
 # add all to table
 Final <- left_join(Cities, ZipCodes, PctMinority, by = "State") %>%
   left_join(NumberOfBusiness, by = "State") %>% 
-  left_join(most_common_zip, by = "State") %>% 
   left_join(MinorityCount, by = "State") %>% 
   left_join(PctMinority, by = "State") %>%
   left_join(Majority, by = "State") %>%
