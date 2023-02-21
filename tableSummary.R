@@ -1,3 +1,5 @@
+install.packages("knitr", repos = "kableExtra_1.3.4.tar.gz")
+
 library("dplyr")
 library("tidyverse")
 library("stringr")
