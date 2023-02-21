@@ -831,17 +831,20 @@ not include gender.</p>
 <th style="text-align:left;">
 State
 </th>
-<th style="text-align:left;">
-Cities
+<th style="text-align:right;">
+CityCount
 </th>
 <th style="text-align:left;">
-ZipCodes
+MostCommonCity
+</th>
+<th style="text-align:right;">
+UniqueZipCount
+</th>
+<th style="text-align:left;">
+MostCommonZIP
 </th>
 <th style="text-align:right;">
 NumberOfBusiness
-</th>
-<th style="text-align:left;">
-most_common_zip
 </th>
 <th style="text-align:right;">
 non_minority_count
@@ -877,17 +880,20 @@ MBE_pct
 <td style="text-align:left;">
 AL
 </td>
-<td style="text-align:left;">
-Opelika
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:left;">
-36804
+Opelika
 </td>
 <td style="text-align:right;">
 1
 </td>
 <td style="text-align:left;">
 36804
+</td>
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:right;">
 1
@@ -921,17 +927,20 @@ NON-MINORITY
 <td style="text-align:left;">
 AZ
 </td>
-<td style="text-align:left;">
-Queen Creek, Scottsdale, Peoria
+<td style="text-align:right;">
+3
 </td>
 <td style="text-align:left;">
-85142, 85260, 85383
+Peoria
 </td>
 <td style="text-align:right;">
 3
 </td>
 <td style="text-align:left;">
 85142
+</td>
+<td style="text-align:right;">
+3
 </td>
 <td style="text-align:right;">
 1
@@ -965,20 +974,20 @@ BLACK
 <td style="text-align:left;">
 CA
 </td>
-<td style="text-align:left;">
-Bakersfield, Oakland, Concord, Berkeley, San Francisco, Irvine, Yorba
-Linda, Los Angeles, San Clemente, Newark, Covina, Pleasanton, Chino, San
-Mateo, Pasadena, El Monte
+<td style="text-align:right;">
+19
 </td>
 <td style="text-align:left;">
-93301, 94607, 94520, 94710, 94105, 92618, 92887, 94612, 90017, 92673,
-94560, 91723, 94588, 91710, 94401, 91101, 91731
+Oakland
 </td>
 <td style="text-align:right;">
 19
 </td>
 <td style="text-align:left;">
 92618
+</td>
+<td style="text-align:right;">
+19
 </td>
 <td style="text-align:right;">
 6
@@ -1012,17 +1021,20 @@ NON-MINORITY
 <td style="text-align:left;">
 CO
 </td>
-<td style="text-align:left;">
-Superior, Loveland
+<td style="text-align:right;">
+2
 </td>
 <td style="text-align:left;">
-80027, 80538
+Loveland
 </td>
 <td style="text-align:right;">
 2
 </td>
 <td style="text-align:left;">
 80027
+</td>
+<td style="text-align:right;">
+2
 </td>
 <td style="text-align:right;">
 2
@@ -1056,22 +1068,20 @@ NON-MINORITY
 <td style="text-align:left;">
 CT
 </td>
-<td style="text-align:left;">
-STamford, Stamford, Bridgeport, New Caanan, Bethany, Westport, Wilton,
-South Windsor, Norwalk, Southport, Danbury, Bethel, Hartford,
-Wallingford, New Haven, Newtown, Berlin, Ridgefield, Fairfield, Milford,
-New London, Glastonbury, North Haven
+<td style="text-align:right;">
+35
 </td>
 <td style="text-align:left;">
-6903, 6905, 6604, 6840, 6524, 6880, 6897, 6074, 6854, 6890, 6810, 6902,
-6801, 6105, 6492, 6512, 6470, 6037, 6877, 6478, 6460, 6851, 6320, 6901,
-6813, 6033, 6473
+Stamford
 </td>
 <td style="text-align:right;">
 35
 </td>
 <td style="text-align:left;">
 6854
+</td>
+<td style="text-align:right;">
+35
 </td>
 <td style="text-align:right;">
 19
@@ -1105,17 +1115,20 @@ NON-MINORITY
 <td style="text-align:left;">
 DC
 </td>
-<td style="text-align:left;">
-Washington, Alexandria
+<td style="text-align:right;">
+12
 </td>
 <td style="text-align:left;">
-20006, 20002, 20016, 20003, 20036, 20011, 20018, 20015
+Washington
 </td>
 <td style="text-align:right;">
 12
 </td>
 <td style="text-align:left;">
 20036
+</td>
+<td style="text-align:right;">
+12
 </td>
 <td style="text-align:right;">
 3
@@ -1149,17 +1162,20 @@ BLACK
 <td style="text-align:left;">
 DE
 </td>
-<td style="text-align:left;">
-Middletown, Delmar, New Castle, Wilmington
+<td style="text-align:right;">
+5
 </td>
 <td style="text-align:left;">
-19709, 19940, 19720, 19802, 19807
+Wilmington
 </td>
 <td style="text-align:right;">
 5
 </td>
 <td style="text-align:left;">
 19709
+</td>
+<td style="text-align:right;">
+5
 </td>
 <td style="text-align:right;">
 2
@@ -1193,19 +1209,20 @@ NON-MINORITY
 <td style="text-align:left;">
 FL
 </td>
-<td style="text-align:left;">
-Jupiter, Perry, Sarasota, Tampa, Miami, Fort Lauderdale, Vero Beach,
-Clermont, Jacksonville
+<td style="text-align:right;">
+13
 </td>
 <td style="text-align:left;">
-33458, 32347, 34241, 33618, 33125, 33315, 33126, 32963, 33132, 33309,
-34711, 32211, 11363
+Miami
 </td>
 <td style="text-align:right;">
 13
 </td>
 <td style="text-align:left;">
 11363
+</td>
+<td style="text-align:right;">
+13
 </td>
 <td style="text-align:right;">
 5
@@ -1239,17 +1256,20 @@ HISPANIC
 <td style="text-align:left;">
 GA
 </td>
-<td style="text-align:left;">
-Buford, Atlanta
+<td style="text-align:right;">
+4
 </td>
 <td style="text-align:left;">
-30518, 30303, 30339, 30327
+Atlanta
 </td>
 <td style="text-align:right;">
 4
 </td>
 <td style="text-align:left;">
 30303
+</td>
+<td style="text-align:right;">
+4
 </td>
 <td style="text-align:right;">
 0
@@ -1283,17 +1303,20 @@ BLACK
 <td style="text-align:left;">
 HI
 </td>
-<td style="text-align:left;">
-Kailua
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:left;">
-96734
+Kailua
 </td>
 <td style="text-align:right;">
 1
 </td>
 <td style="text-align:left;">
 96734
+</td>
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:right;">
 0
@@ -1327,17 +1350,20 @@ ASIAN
 <td style="text-align:left;">
 IL
 </td>
-<td style="text-align:left;">
-Bartlett, Chicago, Mokena
+<td style="text-align:right;">
+9
 </td>
 <td style="text-align:left;">
-60103, 60603, 60661, 60602, 60606, 60601, 60615, 60448, 60605
+Chicago
 </td>
 <td style="text-align:right;">
 9
 </td>
 <td style="text-align:left;">
 60103
+</td>
+<td style="text-align:right;">
+9
 </td>
 <td style="text-align:right;">
 4
@@ -1371,17 +1397,20 @@ BLACK
 <td style="text-align:left;">
 IN
 </td>
-<td style="text-align:left;">
-Fishers
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:left;">
-46037
+Fishers
 </td>
 <td style="text-align:right;">
 1
 </td>
 <td style="text-align:left;">
 46037
+</td>
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:right;">
 0
@@ -1415,17 +1444,20 @@ ASIAN
 <td style="text-align:left;">
 KY
 </td>
-<td style="text-align:left;">
-Louisville
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:left;">
-40299
+Louisville
 </td>
 <td style="text-align:right;">
 1
 </td>
 <td style="text-align:left;">
 40299
+</td>
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:right;">
 0
@@ -1459,17 +1491,20 @@ ASIAN
 <td style="text-align:left;">
 LA
 </td>
-<td style="text-align:left;">
-Baton Rouge, New Orleans
+<td style="text-align:right;">
+2
 </td>
 <td style="text-align:left;">
-70820, 70124
+Baton Rouge
 </td>
 <td style="text-align:right;">
 2
 </td>
 <td style="text-align:left;">
 70124
+</td>
+<td style="text-align:right;">
+2
 </td>
 <td style="text-align:right;">
 1
@@ -1503,20 +1538,20 @@ BLACK
 <td style="text-align:left;">
 MA
 </td>
-<td style="text-align:left;">
-Waltham, Boston, Somerville, Springfield, Amherst, Marion, Norwell,
-Cambridge, Mills, Methuen, Rockland, Northborough, Roslindale,
-Watertown, East Falmouth, Holliston
+<td style="text-align:right;">
+18
 </td>
 <td style="text-align:left;">
-2452, 2108, 2144, 1104, 1002, 2738, 2061, 2142, 2054, 1844, 2370, 1532,
-2131, 2472, 2110, 1109, 2536, 1746
+Boston
 </td>
 <td style="text-align:right;">
 18
 </td>
 <td style="text-align:left;">
 1002
+</td>
+<td style="text-align:right;">
+18
 </td>
 <td style="text-align:right;">
 12
@@ -1550,19 +1585,20 @@ NON-MINORITY
 <td style="text-align:left;">
 MD
 </td>
-<td style="text-align:left;">
-Annapolis, Baltimore, Columbia, Potomac, Lanham, Laurel, Kensington,
-Beltsville, Ellicott City, Rockville, Silver Spring, Fort Washington
+<td style="text-align:right;">
+17
 </td>
 <td style="text-align:left;">
-21401, 21223, 21244, 6450, 20854, 20706, 21202, 20708, 20895, 20705,
-21043, 20850, 20910, 21046, 20744
+Baltimore
 </td>
 <td style="text-align:right;">
 17
 </td>
 <td style="text-align:left;">
 20706
+</td>
+<td style="text-align:right;">
+17
 </td>
 <td style="text-align:right;">
 7
@@ -1596,17 +1632,20 @@ BLACK
 <td style="text-align:left;">
 MI
 </td>
-<td style="text-align:left;">
-Petoskey, Clinton Township, Detroit
+<td style="text-align:right;">
+3
 </td>
 <td style="text-align:left;">
-49770, 48036, 48238
+Clinton Township
 </td>
 <td style="text-align:right;">
 3
 </td>
 <td style="text-align:left;">
 48036
+</td>
+<td style="text-align:right;">
+3
 </td>
 <td style="text-align:right;">
 2
@@ -1640,17 +1679,20 @@ NON-MINORITY
 <td style="text-align:left;">
 MN
 </td>
-<td style="text-align:left;">
-Brooklyn Park, Saint Paul, Minneapolis
+<td style="text-align:right;">
+3
 </td>
 <td style="text-align:left;">
-55428, 55101, 55404
+Brooklyn Park
 </td>
 <td style="text-align:right;">
 3
 </td>
 <td style="text-align:left;">
 55101
+</td>
+<td style="text-align:right;">
+3
 </td>
 <td style="text-align:right;">
 1
@@ -1684,17 +1726,20 @@ BLACK
 <td style="text-align:left;">
 MO
 </td>
-<td style="text-align:left;">
-Kansas City, St. Louis, Maryland Heights
+<td style="text-align:right;">
+3
 </td>
 <td style="text-align:left;">
-64151, 63146, 63043
+Kansas City
 </td>
 <td style="text-align:right;">
 3
 </td>
 <td style="text-align:left;">
 63043
+</td>
+<td style="text-align:right;">
+3
 </td>
 <td style="text-align:right;">
 1
@@ -1728,17 +1773,20 @@ BLACK
 <td style="text-align:left;">
 NC
 </td>
-<td style="text-align:left;">
-Asheville, Charlotte, Rolesville, Durham
+<td style="text-align:right;">
+4
 </td>
 <td style="text-align:left;">
-28805, 28269, 27571, 27709
+Asheville
 </td>
 <td style="text-align:right;">
 4
 </td>
 <td style="text-align:left;">
 27571
+</td>
+<td style="text-align:right;">
+4
 </td>
 <td style="text-align:right;">
 1
@@ -1772,17 +1820,20 @@ BLACK
 <td style="text-align:left;">
 NE
 </td>
-<td style="text-align:left;">
-Omaha
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:left;">
-11803
+Omaha
 </td>
 <td style="text-align:right;">
 1
 </td>
 <td style="text-align:left;">
 11803
+</td>
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:right;">
 1
@@ -1816,73 +1867,20 @@ NON-MINORITY
 <td style="text-align:left;">
 NJ
 </td>
-<td style="text-align:left;">
-Newark, Bridgewater, Cranbury, Forked River, South Planifield, Toms
-River, Clifton, East Rutherford, Englewood Cliffs, Hillsborough, Edison,
-Paramus, Edgewater, Cliffwood Beach, Trenton, Robbinsville, Fort Lee,
-Hackettstown, Camden, Linden, Madison, Passaic, South Orange, Budd Lake,
-Bordentown, Secaucus, Cinnaminson, Jersey City, Belleville, Cliffside
-Park, Malboro, Bloomfield, Wantage, Howell, Whippany, Freehold, East
-Orange, Paterson, Carlstatdt, North Arlington, Denville, Brick,
-Hackensack, Little Ferry, Parsippany, South Plainfield, Belle Mead,
-Berkeley Heights, Closter, Teaneck, Hoboken, Manalapan, Mahwah, Shamong,
-Cliffwood, Mountainside, Branchburg, EDISON, Middletown, Kearny,
-Woodbridge, Roselle, Somerset, Glen Ridge, Barnegat, Union, East
-WIndsor, North Brunswick, West Orange, Califon, Montville, Princeton,
-Union City, Holmdel, Hamilton, Fair Lawn, Butter, East Brunswick, Dover,
-Perth Amboy, Mercerville, West New York, Bernardsville, Guttenberg,
-South Palinfield, Jackson, Princeton Jct., Iselin, Bergenfield, Basking
-Ridge, Pompton Plains, Palisades Park, Hamilton Township, Woodland Park,
-Hillside, Saddle Brook, Fairfield, Nutley, Montclair, Plainsboro, Mount
-Olive, Northvale, Eastampton, Elizabeth, Tenafly, JERSEY CITY, Pine
-Brook, Ridgewood, Rutherford, Manaladan, Rahway, Tinton Falls, Princeton
-Junction, North Bergen, Allendale, Glen Rock, Fords, Clark, Bound Brook,
-Old Bridge, Piscataway, Somerville, Wrightstown, Cherry Hill, Englewood,
-Rochelle Park, Florham Park, Wall, Lodi, Flanders, Swedesboro, Meford,
-Wayne, Carteret, South Hackensack, Livingston, Linwood, Allenhurst, East
-Hanover, Cedar Grove, Hawthorne, Irvington, Roselle Park, Totowa,
-NUTLEY, Marlton, Midland Park, Moonachie, Sparta, Eatontown, Monmouth
-Junction, Emerson, Westfield, Millstone Township, Bogota, Manasquan,
-Wanaque, newark, Towaco, Flemington, Burlington, Lakewood, Rockaway, New
-Brunswick, Red Bank, Vincentown, Elmwood City, Orange, Neptune,
-Kenilworth, Martinsville, Mt Laurel, Morganville, Old Tappan, orange,
-Dumont, Parippany, Hasbrouck Heights, Ocean, Upper Saddle River,
-MOONACHIE, Hainesport, somerset, Hammonton, Garfield, Elmwood Park,
-Metuchen, Asbury Park, Blackwood, PISCATAWAY, Cream Ridge, Morris
-Plains, Millville, Fairfeld, Harrington Park, Mendham, Skillman, UNION
-CITY, Bayonne, Franklinville, Carlstadt, Hainsport, Greenbrook, Parlin,
-River Vale, Ramsey, Princeton JCT, Chester, Westwood, Farmingdale,
-MONMOUTH JUNCTION, ENGLEWOOD, Fair Haven, Shrewsbury, New Providence,
-Morristown, Lyndhurst, Plainfield, Milburn, Cedar Knolls, Woodcliff
-Lake, Keyport, South River, Jamesburg, Monmouth, FAIRFIELD, Willingboro,
-Cranford, Union Beach, Oakhurst
+<td style="text-align:right;">
+569
 </td>
 <td style="text-align:left;">
-7102, 8807, 7114, 8512, 8731, 7080, 8757, 7013, 7073, 7632, 8844, 8820,
-7652, 7020, 7735, 8638, 8069, 7047, 7840, 8104, 7036, 7940, 7055, 7079,
-7828, 8505, 7094, 8077, 7306, 7109, 7010, 7746, 7003, 7461, 7731, 7981,
-7728, 8837, 7018, 7501, 7072, 7031, 7834, 8724, 7601, 7643, 7054, 8502,
-7922, 7624, 7666, 7030, 7726, 7495, 8088, 7721, 7092, 8876, 8817, 7748,
-7032, 7095, 7203, 7302, 8873, 7028, 8005, 7083, 8520, 8902, 7052, 7830,
-7045, 8540, 7087, 11375, 7506, 7733, 7024, 8619, 7410, 7405, 8816, 7801,
-8691, 8862, 7093, 7924, 7305, 8527, 8550, 8830, 7621, 7920, 7104, 7444,
-7650, 7307, 7424, 7205, 7663, 7004, 7110, 7042, 7107, 7514, 8536, 7647,
-7609, 8060, 7202, 7670, 7058, 7450, 7070, 7065, 7753, 7401, 7452, 8863,
-7066, 7103, 8805, 8857, 8854, 7310, 8562, 7430, 7524, 8003, 7631, 7662,
-7932, 7727, 7644, 7012, 7836, 8085, 8055, 7474, 7008, 7606, 7039, 8221,
-8753, 7711, 7936, 7009, 7101, 7111, 7204, 7512, 8053, 7432, 7074, 7871,
-7724, 8852, 7630, 7090, 8535, 7603, 8736, 7465, 7082, 8822, 8016, 8701,
-7866, 8002, 8901, 7701, 7407, 7050, 7470, 7033, 8836, 8054, 7751, 7675,
-7628, 7604, 7712, 7458, 8036, 8037, 7026, 8840, 8012, 8514, 7950, 8332,
-7640, 7945, 8558, 7201, 8608, 7002, 8322, 8812, 8859, 7446, 8105, 7930,
-8609, 7704, 7702, 7974, 7960, 8542, 7011, 7071, 7060, 7208, 7078, 7106,
-7927, 7677, 8882, 7043, 8831, 7755, 8046, 7016
+Jersey City
 </td>
 <td style="text-align:right;">
 569
 </td>
 <td style="text-align:left;">
 7601
+</td>
+<td style="text-align:right;">
+569
 </td>
 <td style="text-align:right;">
 196
@@ -1916,17 +1914,20 @@ NON-MINORITY
 <td style="text-align:left;">
 NM
 </td>
-<td style="text-align:left;">
-Zuni
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:left;">
-87327
+Zuni
 </td>
 <td style="text-align:right;">
 1
 </td>
 <td style="text-align:left;">
 87327
+</td>
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:right;">
 1
@@ -1960,155 +1961,20 @@ NON-MINORITY
 <td style="text-align:left;">
 NY
 </td>
-<td style="text-align:left;">
-New York, Brooklyn, Bronx, Flushing, Ridgewood, Mastic Beach, Rosedale,
-Woodbury, College Point, Mount Vernon, Elmsford, Garden City, Corona,
-Sunnyside, Valley Stream, Saint Albans, West Hempstead, Jamaica,
-Williamsville, Springfield Gardens, NEW YORK, MT VERNON, Staten Island,
-White Plains, St. Albans, Hollis, New Rochelle, Oceanside, Woodside,
-Commack, Cambria Heights, Parish, Freeport, Bohemia, Bayside, Syosset,
-Jericho, Huntington, Deer Park, Shirley, Massapequa, Long Island City,
-Bay Shore, south richmond hill, Richmond Hill, Floral Park, South
-Richmond Hill, Ronkonkoma, Suffern, Newburgh, Brockport, Ozone Park,
-Port Washington, Briarwood, Hempstead, Forrest Hills, Nesconset,
-Huntington Station, Hicksville, Franklin Square, Oakland Gardens, Roslyn
-Heights, Farmingdale, Bron, Central Nyack, Elmhurst, Great Neck,
-Astoria, Clifton Park, East Elmhurst, Plainview, South Ozone Park,
-Garden City Park, Rego Park, Merrick, Ardsley, Riverdale, Queens
-Village, Bronxville, North Amityville, Westbury, Albertson, New Hyde
-Park, Croton-on-Hudson, Maspeth, Lynbrook, Queens, Holbrook, Glendale,
-Fresh Meadows, Bethpage, Smithtown, Delmar, S Richmond Hill, Woodhaven,
-Stony Point, Shoreham, Mineola, Elmont, Monsey, Rensselaer, Central
-Islip, Mt. Vernon, Mahopac, Bayshore, Bayville, Ossining, Mamaroneck,
-West Haverstraw, Red Hook, Rockville Centre, Beacon, Congers, St Albans,
-Armonk, East Setauket, Wading River, staten island, Douglaston, Yonkers,
-Williston Park, Rockville, Croton on Hudson, Long island city, Nanuet,
-Hadley, Levittown, Baldwin, Cedarhurst, Port Chester, Patchogue, East
-Islip, Amsterdam, Whitestone, Wantagh, North Lindenhurst, Delhi, STATEN
-ISLAND, Far Rockaway, Jackson Heights, WESTBURY, New City, Alden, Cold
-Spring, Center Moriches, Loudonville, Harrison, Woodstock, MAMARONECK,
-Hauppauge, Manhasset, Nyack, Skaneateles, Hauppaugh, Yaphank, Jamiaca,
-Tivoli, Statan Island, Katonah, Averne, Bellmore, Richmond, Pomona,
-Fresh Meadow, Spring Valley, Port Jefferson Station, Briarcliff Manor,
-Chestnut Ridge, Lawrence, Miller Place, East Rockaway, Lindenhurst, Glen
-Cove, New Windsor, BRONX, West Islip, Southampton, Melville, S. Richmond
-Hill, Islandia, Locust Valley, Kew Garden Hills, Middle Village,
-Hawthorne, Laurelton, Uniondale, West Babylon, Wheatley Heights, Howard
-Beach, Dix Hills, West Nyack, Coram, Greenwood Lake, Forest Hills,
-Island Park, WOODSIDE, Brewster, Valhalla, Rockaway Beach, LIC, Hudson,
-Medford, W. Hempstead, Mount Sinai, Amityville, Wyandanch, Garnerville,
-Solvay, Beechhurst, Bellrose, BELLMORE, North Woodmere, Valley Cottage,
-Peekskill, Wheatly Heights, Bellport, So. Fallsburg, Penfield, Babylon,
-Wingdale, Rocky Hill, Cortlandt Manor, Floral Pasrk, Pelham, Kew
-Gardens, Orangeburg, Bellerose, Tappan, Albany, Mount Kisco, New York
-Park, Arverne, Ridge, FREEPORT, Slate Hill, KEW GARDENS, Hewlett,
-Amawalk, Crompond, South Huntington, Monroe, Palisades, Fairport,
-Scarsdale, Binghamton, East Northport, Queens village, Cambria Hts,
-Middletown, Bohema, Buffalo, Sag Harbor, Glen Head, Glenmont, Copiague,
-Poughkeepsie, Middleburgh, Massapequa Park, South Amboy, Middle Island,
-Larchmont, South Salem, JAMAICA, BROOKLYN, Tarrytown, East Patchogue,
-Queens Villiage, Wilton, Holtsville, Cortland Manor, Brentwood, East
-Hampton, Searingtown, Rock Hill, GREAT NECK, Montebello, Suffolk,
-Atlantic Beach, MAHOPAC, Sayville, Carle Place, Breezy Point, Wappingers
-Falls, Warwick, Westbrookville, MERRICK, Rye Brook, Port Jefferson,
-Rochester, Pine Island, Portchester, New Paltz, East Meadow, Mt.Vernon,
-Schenectady, Nassau, Kings Park, Centerport, Highland, Queensvillage,
-brooklyn, Broad Channel, Carmel, Pleasantville, Bedford Hills, Seneca
-Falls, Sugar Loaf, Kingston, Centereach, Glen Falls, Liverpool, Rockaway
-Park, Mattituck, Setauket, Niskayuna, Speonk, Northport, Stanfordville,
-Baldwin Place, Moriches, Chappaqua, ROSEDALE, Rye, NEW HYDE PARK, NY,
-Jamestown, Long Beach, Fayetteville, Webster, Mastic, Whitehouse, Lake
-Success, Getzville, FLORAL PARK, New York City, Springfield Garden,
-Great River, Walden, Stony Brook, Rockville Village, RIDGEWOOD, Mt.
-Sinai, Riverhead, new york, Lond Island City, New york, Highland Mills,
-Beechurst, Westhampton, Goshen, New Hempstead, Tuckahoe, Jersey City,
-North Massapequa, jamaica, Hartsdale, Mount vernon, Pearl River,
-Yorktown Heights, MASPETH, Olean, MINEOLA, Poland, Campbell Hall, East
-Williston, Waterford, Bedford, Montauk, Lackawanna, Bay shore, Canton,
-Malverne, New Hartford, Richmond Hill, Quees, EAST NORTHPORT, flushing,
-Saratoga Springs, Roslyn, Syracuse, Irvington, Bridgehampton, Bedford
-Corners, N. Massapeqa, Mount Vermon, HOLLIS, shirley, Vestal, Bayport,
-BAYSIDE, Booklyn, Island park, Tompkins Cove, Seaford, Shelter Island,
-Port Jervis, North Tonawanda, SPRING VALLEY, Endwell, Nunda, Tomkins
-Cove, Kew Gardens Hills, Belle Rose, astoria, Wallkill, Sleepy Hollow,
-Oyster Bay, Brookville, Ithaca, NEWÂ YORK, Yorktown, Dunkirk,
-AMITYVILLE, North Salem, Ellington, Cold Spring Harbor, East Quogue,
-Ossing, ELMONT, SUNNYSIDE, Long ISland City, Manorville, EAST ELMHURST,
-CAMBRIA HEIGHTS, Amity Harbor, Washingtonville, HUNTINGTON, cold spring
-harbor, NEW CITY, Floral, UNIONDALE, Roosevelt, Belle Harbor, Rocky
-Point, North Baldwin, Dobbs Ferry, Patterson, Saint James, Chadwicks,
-Pound Ridge, Somers, SAINT ALBANS, Islip, Glen Oaks, Round Lake, Rock
-Tavern, Little Neck, Thornwood, WYANDANCH, elmhurst, Hopewell Jct., S
-OZONE PARK, ALBANY, Winthrop, MIDDLE VILLAGE, OLD WESTBURY, Jamaica
-Estates, North Merrick, St. Jamaica, Ny, SPRINGFIELD GARDENS, Tonawanda,
-Orchard, Old Westbury, Mt. Kisco, BAY SHORE, Long Island, ELMHURST,
-white plains, bay shore, Harriman, HICKSVILLE, East Rochester,
-Montgomery, Scottsville, Salisbury Mills, E. Elmhurst, Lake Grove,
-Buchanan, Hollis Hills, WEST BABYLON, North Bellmore, Fishkill,
-Hempsted, Glen Wild, Glendale,, NYC, BRIDGEHAMPTON
+<td style="text-align:right;">
+5870
 </td>
 <td style="text-align:left;">
-10013, 11233, 11216, 10467, 10460, 11201, 10452, 10461, 11354, 10002,
-11205, 11228, 11385, 11951, 11422, 11226, 10016, 11230, 10018, 11797,
-10004, 11356, 11218, 11207, 10550, 10523, 11530, 11368, 11104, 10007,
-10019, 11581, 10001, 11358, 10011, 11203, 10128, 10474, 10017, 10151,
-11412, 11552, 10165, 11434, 14221, 11413, 10039, 11435, 10003, 10271,
-11206, 10006, 10023, 11236, 10312, 10471, 10603, 10309, 11249, 10458,
-11423, 10801, 10314, 10472, 11572, 11377, 11725, 11411, 13131, 11520,
-10065, 11716, 11364, 11791, 11238, 11210, 10027, 11222, 10014, 11753,
-11217, 10035, 11743, 11729, 11967, 11220, 10805, 11758, 10462, 11211,
-11433, 11101, 11706, 11419, 10306, 10466, 11001, 10025, 11779, 10901,
-10010, 12550, 14420, 11361, 11416, 10601, 11050, 10303, 11550, 10456,
-11375, 11225, 11767, 11746, 11801, 11231, 11010, 10030, 11577, 11436,
-10009, 11735, 10960, 11373, 11237, 10469, 11021, 11234, 11106, 12065,
-10005, 11370, 11803, 11221, 10038, 10026, 11420, 10021, 11105, 11580,
-11040, 11374, 11566, 10502, 10463, 11204, 11429, 10708, 11214, 11701,
-11590, 11427, 10465, 10036, 10168, 11213, 11507, 10475, 10473, 10520,
-11379, 11563, 10454, 11103, 11741, 10167, 10305, 11366, 11714, 11787,
-10605, 10031, 10033, 11208, 10022, 11235, 12054, 11491, 10451, 11215,
-11209, 10105, 10980, 10457, 10302, 11223, 11786, 10034, 11501, 10301,
-11003, 10952, 10024, 12144, 11722, 10541, 10453, 10020, 11417, 11709,
-10562, 10110, 10543, 10993, 12571, 11570, 12508, 10920, 10504, 10280,
-11733, 11792, 10028, 11363, 10704, 11596, 11212, 10075, 10012, 10954,
-12835, 11378, 11756, 11510, 11516, 10304, 10573, 10279, 11109, 11772,
-11365, 11730, 12010, 11357, 11793, 11757, 11232, 13753, 11432, 11691,
-10455, 10037, 11355, 11239, 10956, 11360, 11418, 14004, 10516, 11934,
-12211, 10528, 12498, 11372, 10111, 11788, 11030, 10553, 10032, 13152,
-10552, 11980, 12583, 10468, 11421, 10536, 11692, 11710, 10170, 10970,
-10459, 11428, 11219, 10310, 10701, 10120, 10977, 11776, 10510, 10308,
-10029, 11559, 11764, 11102, 11518, 11542, 12553, 11795, 10470, 11968,
-11747, 11749, 11229, 11560, 11367, 10532, 11553, 11704, 11798, 11556,
-11414, 10994, 11727, 10925, 11224, 11558, 10509, 10705, 10595, 11693,
-12534, 10710, 11246, 11763, 11766, 10923, 13209, 11426, 10989, 10566,
-11713, 12779, 10307, 14526, 11702, 12594, 6067, 10567, 11004, 10803,
-11415, 10962, 10804, 10607, 10983, 10044, 12020, 10549, 10122, 11961,
-10154, 10973, 11557, 10501, 10517, 11369, 10950, 12210, 10964, 14450,
-10583, 10606, 13903, 11731, 10941, 14203, 11963, 11242, 11545, 12077,
-11726, 12601, 12122, 10464, 10172, 11762, 10176, 10040, 8879, 11953,
-10538, 10590, 10175, 10591, 12831, 11742, 11717, 11937, 12775, 11509,
-11782, 10177, 11514, 11697, 12603, 12590, 10990, 11430, 12785, 11023,
-10940, 11777, 14624, 10969, 10169, 12561, 11554, 12305, 12204, 12123,
-11754, 11721, 12528, 11020, 10512, 10570, 10507, 10123, 13148, 10981,
-12401, 10119, 11720, 12801, 13088, 11694, 11752, 14607, 12309, 14614,
-11972, 11768, 12581, 10505, 11955, 10514, 10580, 14701, 11561, 13066,
-14580, 11950, 10174, 11241, 11042, 12205, 11362, 14231, 11739, 12586,
-11790, 10703, 11901, 10930, 11977, 10924, 11952, 10707, 7302, 14606,
-10530, 10965, 10598, 14760, 13431, 10916, 12188, 10506, 13901, 11954,
-14218, 13617, 11565, 13413, 10118, 12866, 11576, 13203, 7111, 11932,
-14609, 13850, 11705, 14625, 10986, 11251, 11783, 11456, 11964, 12771,
-14120, 13760, 10155, 14517, 14623, 12589, 11771, 10121, 14852, 14223,
-10069, 14048, 10560, 14732, 11724, 11942, 10166, 10152, 14605, 14208,
-11949, 14611, 12159, 10992, 10281, 12206, 12203, 11575, 11778, 10522,
-12563, 11780, 13319, 10576, 10589, 11751, 12151, 12575, 13210, 10594,
-12533, 12207, 10053, 13697, 12202, 11568, 11024, 14150, 14127, 12306,
-10926, 10311, 14445, 12549, 14546, 12577, 11755, 10511, 12524, 12738,
-14209
+New York
 </td>
 <td style="text-align:right;">
 5870
 </td>
 <td style="text-align:left;">
 10001
+</td>
+<td style="text-align:right;">
+5870
 </td>
 <td style="text-align:right;">
 1752
@@ -2142,17 +2008,20 @@ BLACK
 <td style="text-align:left;">
 OH
 </td>
-<td style="text-align:left;">
-Youngstown, Columbus, Cleveland, Cincinnati
+<td style="text-align:right;">
+6
 </td>
 <td style="text-align:left;">
-44505, 43204, 43215, 44128, 45237
+Columbus
 </td>
 <td style="text-align:right;">
 6
 </td>
 <td style="text-align:left;">
 43215
+</td>
+<td style="text-align:right;">
+6
 </td>
 <td style="text-align:right;">
 2
@@ -2186,17 +2055,20 @@ BLACK
 <td style="text-align:left;">
 OK
 </td>
-<td style="text-align:left;">
-Norman
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:left;">
-73072
+Norman
 </td>
 <td style="text-align:right;">
 1
 </td>
 <td style="text-align:left;">
 73072
+</td>
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:right;">
 1
@@ -2230,20 +2102,20 @@ NON-MINORITY
 <td style="text-align:left;">
 PA
 </td>
-<td style="text-align:left;">
-Bala Cynwyd, Swiftwater, Mountain Top, Philadelphia, Pittsburgh,
-Folcroft, Moon Twp, Wallingford, Willow Grove, King of Prussia,
-Springfield, Stroudsburg, Trappe, Blue Bell, Thornton
+<td style="text-align:right;">
+21
 </td>
 <td style="text-align:left;">
-19004, 18370, 18707, 19130, 15204, 19106, 19032, 19103, 19154, 15108,
-19147, 19086, 19090, 19406, 19064, 18360, 19426, 19422, 19373
+Philadelphia
 </td>
 <td style="text-align:right;">
 21
 </td>
 <td style="text-align:left;">
 19103
+</td>
+<td style="text-align:right;">
+21
 </td>
 <td style="text-align:right;">
 12
@@ -2277,17 +2149,20 @@ NON-MINORITY
 <td style="text-align:left;">
 RI
 </td>
-<td style="text-align:left;">
-Providence, Barrington
+<td style="text-align:right;">
+2
 </td>
 <td style="text-align:left;">
-2906, 2806
+Barrington
 </td>
 <td style="text-align:right;">
 2
 </td>
 <td style="text-align:left;">
 2806
+</td>
+<td style="text-align:right;">
+2
 </td>
 <td style="text-align:right;">
 1
@@ -2321,17 +2196,20 @@ HISPANIC
 <td style="text-align:left;">
 TX
 </td>
-<td style="text-align:left;">
-Mckinney, San Antonio, Grand Prarie, The Woodlands, Southlake
+<td style="text-align:right;">
+5
 </td>
 <td style="text-align:left;">
-75069, 78202, 75052, 77380, 76092
+Grand Prarie
 </td>
 <td style="text-align:right;">
 5
 </td>
 <td style="text-align:left;">
 75052
+</td>
+<td style="text-align:right;">
+5
 </td>
 <td style="text-align:right;">
 2
@@ -2365,18 +2243,20 @@ HISPANIC
 <td style="text-align:left;">
 VA
 </td>
-<td style="text-align:left;">
-Charlottesvile, Gainesville, Chesapeake, South Boston, McLean, Tysons
-Corner, Henrico, Reston, Vienna
+<td style="text-align:right;">
+9
 </td>
 <td style="text-align:left;">
-22903, 20155, 23322, 24592, 22101, 22182, 23228, 20191
+Charlottesvile
 </td>
 <td style="text-align:right;">
 9
 </td>
 <td style="text-align:left;">
 22182
+</td>
+<td style="text-align:right;">
+9
 </td>
 <td style="text-align:right;">
 1
@@ -2410,17 +2290,20 @@ ASIAN
 <td style="text-align:left;">
 WA
 </td>
-<td style="text-align:left;">
-Snohomish, Tacoma
+<td style="text-align:right;">
+2
 </td>
 <td style="text-align:left;">
-98290, 98406
+Snohomish
 </td>
 <td style="text-align:right;">
 2
 </td>
 <td style="text-align:left;">
 98290
+</td>
+<td style="text-align:right;">
+2
 </td>
 <td style="text-align:right;">
 1
@@ -2454,17 +2337,20 @@ HISPANIC
 <td style="text-align:left;">
 WI
 </td>
-<td style="text-align:left;">
-Milwaukee
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:left;">
-53211
+Milwaukee
 </td>
 <td style="text-align:right;">
 1
 </td>
 <td style="text-align:left;">
 53211
+</td>
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:right;">
 1
@@ -2498,17 +2384,20 @@ NON-MINORITY
 <td style="text-align:left;">
 WV
 </td>
-<td style="text-align:left;">
-Huntington
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:left;">
-25705
+Huntington
 </td>
 <td style="text-align:right;">
 1
 </td>
 <td style="text-align:left;">
 25705
+</td>
+<td style="text-align:right;">
+1
 </td>
 <td style="text-align:right;">
 1
@@ -2541,16 +2430,16 @@ NON-MINORITY
 </tbody>
 </table>
 <p>This table shows information regarding certification program mainly
-divided based on state. It is alphabetical order with information of all
-the cities and zipcodes. I choose to provide this information as I
-believe it is important since the same data will be used on a map for
-one of the chart. There is also information regarding the amount of
-business participating per state and information regarding the ethnic
-diversity per state such as the amount of minority owner, percentage,
-and major ethnic minority. I also included the amount and percentage of
-certification, though I only included WBE and MBE since they are the
-more important certification in the context that other certification has
-too low of participant number.</p>
+divided based on state. It is alphabetical order with information of the
+most common cities and zipcodes and their numbers. I choose to provide
+this information as I believe it is important since the same data will
+be used on a map for one of the chart. There is also information
+regarding the amount of business participating per state and information
+regarding the ethnic diversity per state such as the amount of minority
+owner, percentage, and major ethnic minority. I also included the amount
+and percentage of certification, though I only included WBE and MBE
+since they are the more important certification in the context that
+other certification has too low of participant number.</p>
 </div>
 <div id="chart-1-representation-of-ethnicities-among-nyc-businesses" class="section level3">
 <h3>Chart 1: Representation of Ethnicities Among NYC Businesses</h3>
