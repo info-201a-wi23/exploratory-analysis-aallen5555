@@ -25,13 +25,16 @@ MinorityCount <- full_dataset %>% group_by(State) %>%
   summarise(non_minority_count = sum(Ethnicity == "NON-MINORITY"), 
     total_count = n()) %>% 
   mutate(minority_count = (total_count - non_minority_count))
+MinorityCount <- MinorityCount[, c("State", "minority_count")]
+
 
 # count the percentage minority
 PctMinority <- full_dataset %>% group_by(State) %>%
   summarise(non_minority_count = sum(Ethnicity == "NON-MINORITY"), 
-    total_count = n()) %>% 
-  mutate(minority_pct = ((total_count - non_minority_count) / total_count) * 100)
-  PctMinority <- PctMinority[, c("State", "minority_pct")]
+            total_count = n()) %>% 
+  mutate(minority_pct = ((total_count - non_minority_count) / total_count) * 100) %>% 
+  select(State, minority_pct) %>% 
+  mutate(minority_pct = round(minority_pct, digits = 0))
 
 # find out which ethnicity is the majority
 Majority <- full_dataset %>%
@@ -41,24 +44,10 @@ Majority <- full_dataset %>%
 # find the number of WBE owner
 WBECount <- full_dataset %>% group_by(State) %>%  
   summarise(WBECount = sum(str_detect(certification, "WBE")))
-
-# find the number of WBE percentage
-WBEPercentage <- full_dataset %>% group_by(State) %>%
-  summarise(WBECount = sum(str_detect(certification,"WBE")),
-    total_count = n()) %>%
-  mutate(WBE_pct = (WBECount / total_count) * 100)
-  WBEPercentage <- WBEPercentage[, c("State", "WBE_pct")]
                    
 # find the number of MBE owner
 MBECount <- full_dataset %>% group_by(State) %>%  
   summarise(MBECount = sum(str_detect(certification, "MBE")))
-
-# find the number of MBE percentage
-MBEPercentage <- full_dataset %>% group_by(State) %>%
-  summarise(MBECount = sum(str_detect(certification, "MBE")),
-    total_count = n()) %>%
-  mutate(MBE_pct = (MBECount / total_count) * 100)
-  MBEPercentage <- MBEPercentage[, c("State", "MBE_pct")]
 
 # add all to table
 Final <- left_join(Cities, ZipCodes, PctMinority, by = "State") %>%
@@ -67,9 +56,8 @@ Final <- left_join(Cities, ZipCodes, PctMinority, by = "State") %>%
   left_join(PctMinority, by = "State") %>%
   left_join(Majority, by = "State") %>%
   left_join(WBECount, by = "State") %>%
-  left_join(WBEPercentage, by = "State") %>%
-  left_join(MBECount, by = "State") %>%
-  left_join(MBEPercentage, by = "State")
+  left_join(MBECount, by = "State")
+
 
 Final %>% kbl() %>% kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
 
