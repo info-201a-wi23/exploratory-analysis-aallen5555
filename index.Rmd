@@ -77,13 +77,14 @@ There are many significant challenges and limitations that come along with analy
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+The data we used contain information regarding certification program mainly for women and minority business owner. The dataset is hosted by the City of New York thus most data are from or located in New York, but are not limited to it. From this data, we know that certification are spread to over 33 states with over 6645 business participating. of these businesses 4605 are owned by minorities, with each states having its own majority in each minority groups observed. However, out of the 33 states observed, most of them have a non-minority majority. This is likely because of the small amount participating in other states or they are non-minority women. Out of the 6645 business participating, we can conclude that there are a minimum of 2998 women business owner. This number is obtained by counting WBE Certification as original data set do not include gender.
 
 ### Table
 
-Include a table of aggregate information
+```{r, echo = FALSE, warning=FALSE, message=FALSE, code = readLines("tableSummary.R")}
+```
 
-Describe why you included the table and what information it reveals
+This table shows information regarding certification program mainly divided based on state. It is alphabetical order with information of all the cities and zipcodes. I choose to provide this information as I believe it is important since the same data will be used on a map for one of the chart. There is also information regarding the amount of business participating per state and information regarding the ethnic diversity per state such as the amount of minority owner, percentage, and major ethnic minority. I also included the amount and percentage of certification, though I only included WBE and MBE since they are the more important certification in the context that other certification has too low of participant number.
 
 ### Chart 1
 
