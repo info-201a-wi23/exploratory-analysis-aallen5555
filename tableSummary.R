@@ -71,5 +71,6 @@ Final <- left_join(Cities, ZipCodes, PctMinority, by = "State") %>%
   left_join(MBECount, by = "State") %>%
   left_join(MBEPercentage, by = "State")
 
-Final %>% kbl()
+Final %>% kbl() %>% kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+
 
