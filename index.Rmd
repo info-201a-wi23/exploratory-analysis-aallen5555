@@ -109,6 +109,7 @@ This chart is a visual of  the location of each business in the greater New York
 
 ### Chart 3
 
-Include a chart
+This chart is a visualizations of the distribution of the top 3 certification categories within the database. I chose a pie chart in particular because it shows just the whole (nearly 100%) distribution of the certifications. The largest category, MBE (or "Minority-owned Business Enterprise) certifications, account for 48% of the total certifications within the data set. Next, at 31% representation was WBE (or "Woman-owned Business Enterprise) certifications. Then, at 21% was a category of businesses that claim both certifications. This is important when considering the intersectionality of businesses in the data set. Many of the businesses included are minority and woman owned. It is important to note that, while there are other categories in the data set, the overwhelming majority of certifications were those that are included in the pie chart.
 
-Describe why you chose this chart and what information it reveals
+```{r, echo = FALSE, warning=FALSE, message=FALSE, code = readLines("cert_pie_chart.R")}
+```
