@@ -38,7 +38,7 @@ ggplot(data = state_shape) +
   geom_point(data = full_dataset,
              aes(x = lat_long$lng,
                  y = lat_long$lat,
-                 color = certification))+
+                 color = certification)) +
   blank_theme
 
 #	Longitude: 71° 47' 25" W to 79° 45' 54" W Latitude: 40° 29' 40" N to 45° 0' 42" N
